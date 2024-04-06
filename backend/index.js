@@ -5,7 +5,7 @@ const app = express();
 app.use(cors());
 const PORT = process.env.PORT || 3000;
 
-app.get("/info", (req, res) => {
+app.get("/api/info", (req, res) => {
   // Read the contents of user.json
   fs.readFile("data.json", "utf8", (err, data) => {
     if (err) {

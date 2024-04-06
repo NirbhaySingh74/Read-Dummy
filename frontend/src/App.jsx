@@ -7,7 +7,7 @@ function App() {
 
   const getData = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/info/");
+      const response = await axios.get("/api/info/");
       setData(response.data);
     } catch (error) {
       console.error("Error fetching data:", error);
